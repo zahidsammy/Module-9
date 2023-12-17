@@ -1,0 +1,33 @@
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="app.css">
+    <title>Calculator Example</title>
+</head>
+
+<body>
+    <label>Number #1: <input id="num1" type="number"></label>
+    <label>Number #2: <input id="num2" type="number"></label><br><br>
+
+    <div>
+        <button id="addBtn">Add!</button>
+        <button id="subtractBtn">Subtract!</button>
+        <button id="multiplyBtn">Multiply!</button>
+        <button id="divideBtn">Divide!</button>
+    </div>
+    <br>
+
+    <div>Result: <span id="result"></span></div>
+
+    <script src="./CalculatorController.js"></script>
+    <script>
+        // Using event listeners for better separation of concerns
+        document.getElementById("addBtn").addEventListener("click", () => getResult('add'));
+        document.getElementById("subtractBtn").addEventListener("click", () => getResult('subtract'));
+        document.getElementById("multiplyBtn").addEventListener("click", () => getResult('multiply'));
+        document.getElementById("divideBtn").addEventListener("click", () => getResult('divide'));
+    </script>
+</body>
+
+</html>

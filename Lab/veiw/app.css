@@ -1,0 +1,21 @@
+/* styles.css */
+
+.calculator {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  input[type="number"],
+  button {
+    margin: 5px;
+    padding: 8px;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  #result {
+    font-weight: bold;
+  }
+  
